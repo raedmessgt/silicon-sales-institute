@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Silicon Sales Institute — Demo Site
 
-## Getting Started
+Standalone marketing site for **Silicon Sales Institute** (temporary client demo).
 
-First, run the development server:
+Built with Next.js (App Router). The site serves at **`/`**.
+
+## Local development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+npm start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Stack
 
-## Learn More
+- Next.js 16 + React 19
+- GSAP (scroll motion)
+- Custom CSS (no Tailwind)
+- Google fonts via `next/font`: Sora, Manrope, JetBrains Mono
 
-To learn more about Next.js, take a look at the following resources:
+## Content & assets
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Path | Purpose |
+|------|---------|
+| `src/lib/silicon-sales.ts` | Copy, FAQs, placement logos, apply URL |
+| `src/components/silicon-sales/` | Page UI, particle headline, win carousel |
+| `public/silicon-sales/` | Placement logos + win imagery |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Edit `src/lib/silicon-sales.ts` to swap copy, logos, apply link, or contact email before launch.
 
-## Deploy on Vercel
+## Environment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+No required env vars for the demo. Apply / contact URLs are hardcoded in `src/lib/silicon-sales.ts`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Optional: add a `.env.local` later if you move URLs behind `NEXT_PUBLIC_*` vars.
+
+## Deploy on Netlify
+
+1. Push this repo to GitHub (already done if you cloned from the remote).
+2. In [Netlify](https://app.netlify.com): **Add new site → Import an existing project → GitHub**.
+3. Select this repository.
+4. Build settings (usually auto-detected via `netlify.toml`):
+   - **Build command:** `npm run build`
+   - **Publish directory:** leave as Netlify Next plugin default (`.next`)
+5. Deploy. Netlify’s Next.js runtime (`@netlify/plugin-nextjs`) handles SSR/static output.
+
+CLI alternative (if logged in):
+
+```bash
+npm i -g netlify-cli
+netlify login
+netlify init
+netlify deploy --build --prod
+```
+
+## GitHub
+
+Public repo: see the remote after `git remote -v`, or open the URL returned when this project was published.
+
+## Client email
+
+See [`CLIENT_EMAIL.md`](./CLIENT_EMAIL.md) for the draft message from RAED to the client.
