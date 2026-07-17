@@ -62,7 +62,7 @@ netlify deploy --build --prod
 
 ## GitHub
 
-Public repo: see the remote after `git remote -v`, or open the URL returned when this project was published.
+**https://github.com/raedmessgt/silicon-sales-institute**
 
 ## Client email
 

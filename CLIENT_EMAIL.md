@@ -2,21 +2,23 @@
 
 **From:** RAED  
 **To:** Silicon Sales Institute (owner / client)  
-**Subject:** Temporary demo site for Silicon Sales Institute — ready for your feedback
+**Subject:** Temporary demo — leveled-up take on your current SSI site
 
 ---
 
 Hi,
 
-I’m Raed — following up on what we discussed, I’ve put together a temporary demo website for Silicon Sales Institute.
+I’m Raed. As discussed, I’ve put together a temporary demo website for Silicon Sales Institute.
 
-It’s a full professional remake of the marketing experience: clearer structure and polish, a placements roulette with the brand logos, a particle headline treatment, community wins carousel, tighter mobile behaviour, and a layout that’s straightforward to customise before a final launch.
+I pulled a design kit myself from your current Lovable SSI site, then pushed the design a lot further — cleaner structure, placements roulette, particle headline, community wins, tighter polish and mobile. I tried to give the whole thing a serious upgrade while keeping the spirit of what you already have.
 
-Here’s the temporary demo link (placeholder content / staging only — not the final live site):
+From what I’ve seen of the live site, I honestly think this version lands a lot stronger — but that’s my take, and I’m very open if you see it differently.
+
+Here’s the temporary demo (staging only — not the final launch):
 
 **[DEMO_LINK]**
 
-Have a look when you can and tell me what you’d like changed — copy, sections, branding, CTAs, anything. It’s fully customisable, so we can shape it to exactly what you want before going live.
+Have a look and tell me what you’d change. Happy to tweak anything — copy, sections, branding, CTAs — it’s fully customisable before we go live. And if you already have another design system or direction from earlier conversations, I’m happy to implement that too.
 
 Looking forward to your thoughts.
 
