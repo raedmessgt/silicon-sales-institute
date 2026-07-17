@@ -1,26 +1,27 @@
 # Client email draft (do not send from here)
 
-**From:** RAED  
+**From:** Raed  
 **To:** Silicon Sales Institute (owner / client)  
-**Subject:** Temporary demo — leveled-up take on your current SSI site
+**Subject:** Temporary demo — Silicon Sales Institute
 
 ---
 
 Hi,
 
-I’m Raed. As discussed, I’ve put together a temporary demo website for Silicon Sales Institute.
+I’m Raed. As discussed, here’s a temporary demo for Silicon Sales Institute.
 
-I pulled a design kit myself from your current Lovable SSI site, then pushed the design a lot further — cleaner structure, placements roulette, particle headline, community wins, tighter polish and mobile. I tried to give the whole thing a serious upgrade while keeping the spirit of what you already have.
+I took the design direction from your current site and rebuilt it as a polished one-pager — placements brand roulette, a particle headline on “In 30–45 Days”, community wins, clearer section structure, hover polish, mobile, and customizable CTAs / apply funnel.
 
-From what I’ve seen of the live site, I honestly think this version lands a lot stronger — but that’s my take, and I’m very open if you see it differently.
+Temporary demo (staging only):
 
-Here’s the temporary demo (staging only — not the final launch):
+**[DEMO_LINK]**  
+*(paste your Netlify URL here)*
 
-**[DEMO_LINK]**
+I’m open to any modifications, and happy to work from a design system you already had in mind. If this direction works for you, I can get it live quickly.
 
-Have a look and tell me what you’d change. Happy to tweak anything — copy, sections, branding, CTAs — it’s fully customisable before we go live. And if you already have another design system or direction from earlier conversations, I’m happy to implement that too.
+I’m a student building real client work, and I’d be proud to include this collaboration on my CV — keen to deliver something you’re happy with.
 
-Looking forward to your thoughts.
+Have a look and let me know your feedback.
 
 Best,  
 Raed
