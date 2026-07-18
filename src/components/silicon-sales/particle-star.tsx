@@ -88,15 +88,26 @@ export function ParticleStar({
       const metrics = measure.measureText(text);
       const ascent = metrics.actualBoundingBoxAscent || fontPx * 0.8;
       const descent = metrics.actualBoundingBoxDescent || fontPx * 0.25;
-      // Force the layout box to fit the full string + breathing room for trailing “s”
+      const narrow = window.innerWidth < 720;
+      const parentW =
+        textEl!.parentElement?.clientWidth ||
+        Math.max(200, window.innerWidth - 48);
+      // Fit the string; never force wider than the title line (avoids page overflow)
       const inkW = Math.ceil(
-        Math.max(metrics.width, metrics.actualBoundingBoxRight || 0) + 28,
+        Math.max(metrics.width, metrics.actualBoundingBoxRight || 0) +
+          (narrow ? 12 : 28),
       );
-      textEl!.style.minWidth = `${inkW}px`;
-      const tw = inkW;
+      const tw = Math.min(inkW, Math.floor(parentW));
+      textEl!.style.minWidth = `${tw}px`;
+      textEl!.style.maxWidth = "100%";
       const th = Math.ceil(Math.max(rect.height, ascent + descent) + 8);
 
-      padPx = Math.round(Math.max(64, Math.min(120, fontPx * 1.25)));
+      padPx = Math.round(
+        Math.max(
+          narrow ? 28 : 64,
+          Math.min(narrow ? 44 : 120, fontPx * (narrow ? 0.85 : 1.25)),
+        ),
+      );
       setPad(padPx);
 
       const w = tw + padPx * 2;

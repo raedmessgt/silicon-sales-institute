@@ -158,7 +158,8 @@ export function SiliconSalesSite() {
     <main ref={rootRef} className="ssi">
       <header className="ssi-nav">
         <a href="#top" className="ssi-nav__brand">
-          Silicon Sales Institute
+          Silicon Sales
+          <span className="ssi-nav__brand-tail"> Institute</span>
         </a>
         <nav className="ssi-nav__links" aria-label="Primary">
           <a href="#placements">Placements</a>
